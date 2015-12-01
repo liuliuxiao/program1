@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int *p, i, n;
+	int total=0;
+
+int max;
+int min;
+scanf("%d",&n);
+p = (int *) malloc(n * sizeof(int)); //分配n段长度为存放int型长度的内存给p
+printf("\n");
+for(i=0;i<n;i++)
+scanf("%d",&p[i]);
+
+for(i=0;i<n;i++)
+{total+=p[i];
+}
+printf("\n%d",total);
+
+return 0;
+
+}
